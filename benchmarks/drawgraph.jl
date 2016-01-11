@@ -2,7 +2,7 @@ using Gadfly
 using DataFrames
 
 bench_plot(x, y, kind, sz) =
-    draw(PNG("$kind.png", sz...), plot(x=x, y=y, Geom.bar, Guide.xlabel("Database Drivers"), Guide.ylabel("Time in seconds"), Guide.title(uppercase(kind)), color=x))
+    draw(PNG("$kind.png", sz...), plot(x=x, y=y, Geom.bar, Theme(bar_spacing=3mm), Guide.xlabel("Database Drivers"), Guide.ylabel("Time in seconds"), Guide.title(uppercase(kind)), color=x))
 
 benchmarks = readtable("benchmarks.csv")
 x = benchmarks[:DataBase_Drivers]

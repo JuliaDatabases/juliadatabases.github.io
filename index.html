@@ -32,7 +32,6 @@
 	    <li class="nav-header">Related packages</li>
 	    <li><a href="http://juliadb.github.io/DBAPI.jl">DBAPI</a></li>
 	    <li><a href="http://juliadb.github.io/DBPerf.jl">DBPerf</a></li>
-
 	  </ul>
 	</div>
 	<div class="span8">
@@ -41,7 +40,12 @@
 	  <h4>Performance evaluation of various drivers: <a href="http://juliadb.github.io/DBPerf.jl">DBPerf.jl</a></h4>
 	  <p>This repository contains the code that benchmarks all the Julia Database Drivers, End-Users can utilize this code to compare the performance between various Database drivers available in Julia.
 	  </p>
-          <h4>Feature List</h4>
+	</div>
+      </div>
+      <hr>
+      <div class="row">
+	<div class="container span12">
+          <h3>Feature List</h3>
 	  <table class="table">
 	    <tr><th>Feature</th><th>PostgreSQL</th><th>MySQL</th><th>ODBC</th><th>JDBC</th><th>Mongo</th></tr>
 	    <tr><th>Prepared Statements</th><td>yes</td><td>yes</td><td>no</td><td>yes</td><td>N/A</td></tr>
@@ -53,6 +57,29 @@
 	    <tr><th>Compatible with Julia v0.3</th><td>no</td><td>yes</td><td>yes</td><td>no</td><td>yes</td></tr>
 	  </table>
 	</div>
+      </div>
+      <hr>
+      <div class="row">
+	<div class="container span12">
+	  <h3>Performance</h3>
+	</div>
+      </div>
+      <div class="row">
+	<div class="span2"></div>
+	<div class="span8 text-center">
+	  <img src="benchmarks/select.png">
+	</div>
+	<div class="span2"></div>
+      </div>
+      <div class="row">
+	<div class="span1"></div>
+	<div class="span5 text-center">
+	  <img src="benchmarks/insert.png">
+	</div>
+	<div class="span5 text-center">
+	  <img src="benchmarks/update.png">
+	</div>
+	<div class="span1"></div>
       </div>
       <hr>
       <div class="footer">

@@ -24,23 +24,17 @@
 	  <ul class="nav nav-list">
 	    <li class="nav-header">Julia Database APIs</li>
 	    <li class="active"><a href="https://juliadatabases.github.io/MySQL.jl/stable">MySQL</a></li>
-	    <li><a href="https://juliadatabases.github.io/JDBC.jl">JDBC</a></li>
 	    <li><a href="https://juliadatabases.github.io/ODBC.jl/stable">ODBC</a></li>
+	    <li><a href="https://juliadatabases.github.io/JDBC.jl">JDBC</a></li>
 	    <li><a href="https://juliadatabases.github.io/SQLite.jl/stable">SQLite</a></li>
-	    <li><a href="https://github.com/invenia/LibPQ.jl">LibPQ (new for PostgreSQL)</a></li>
-	    <li><a href="https://juliadatabases.github.io/PostgreSQL.jl">PostgreSQL (old outdated driver wrapper)</a></li>
+	    <li><a href="https://github.com/invenia/LibPQ.jl">LibPQ (PostgreSQL)</a></li>
 	    <li><a href="https://juliadatabases.github.io/Hive.jl">Hive</a></li>
-	    <li class="nav-header">Related packages</li>
-	    <li><a href="https://juliadatabases.github.io/DBAPI.jl">DBAPI</a></li>
-	    <li><a href="https://juliadatabases.github.io/DBPerf.jl">DBPerf</a></li>
 	  </ul>
 	</div>
 	<div class="span8">
-	  <h4>A common interface for database drivers: <a href="https://juliadatabases.github.io/DBAPI.jl">DBAPI.jl</a></h4>
-	  <p>Database APIs that conform to DBAPI.jl have a common interface, this allows the underlying database system to change without having to change the code.</p>
-	  <h4>Performance evaluation of various drivers: <a href="https://juliadatabases.github.io/DBPerf.jl">DBPerf.jl</a></h4>
-	  <p>This repository contains the code that benchmarks all the Julia Database Drivers, End-Users can utilize this code to compare the performance between various Database drivers available in Julia.
-	  </p>
+	<p>
+	Julia supports all the common databases through its ODBC.jl and JDBC.jl packages, with native drivers for MySQL, Postgres, and SQLite. Join the discussion on <a href="https://discourse.julialang.org">Discourse</a> or the #data channel on the <a href="http://julialang.slack.com/">Julia slack</a>.
+	</p>	
 	</div>
       </div>
       <hr>
@@ -54,8 +48,6 @@
 	    <tr><th>Binary JSON</th><td>yes</td><td>no</td><td>no</td><td>no</td><td>yes</td></tr>
 	    <tr><th>Tested DBs</th><td>PostgreSQL</td><td>MySQL</td><td>Microsoft Access, Oracle, PostgreSQL, MySQL, Microsoft SQL Server (not for CE edition), Sybase ASE, and DB2</td><td>MySQL, HBase, Java DB, Oracle, PostgreSQL, DB2, H2, Microsoft SQL Server, NuoDB, SQLite, Sybase ASE, Vertica</td><td>MongoDB</td></tr>
 	    <tr><th>Conforms to DBAPI.jl</th><td>no</td><td>no</td><td>no</td><td>yes</td><td>no</td></tr>
-	    <tr><th>Compatible with Julia v0.4</th><td>yes</td><td>yes</td><td>yes</td><td>yes</td><td>yes</td></tr>
-	    <tr><th>Compatible with Julia v0.3</th><td>no</td><td>yes</td><td>yes</td><td>no</td><td>yes</td></tr>
 	  </table>
 	</div>
       </div>
